@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nimra Afzal | BSCS Student &amp; Aspiring Web Developer</title>
+  <meta name="description" content="Portfolio of Nimra Afzal, BSCS student at the University of Sargodha, Python programmer and aspiring web developer.">
+  <!-- Adds "js" class so reveal animations only hide content when JavaScript works -->
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Loading screen (fades out in main.js) -->
+  <div id="loader" aria-hidden="true"><div class="spinner"></div><p>Loading portfolio…</p></div>
+  <div id="progress" aria-hidden="true"></div>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- ============ NAVIGATION ============ -->
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="#home" class="logo" aria-label="Nimra Afzal, go to top">Nimra<span>.</span></a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#journey">Journey</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="hello">Hello, I'm</p>
+          <h1>Nimra Afzal</h1>
+          <h2 class="headline grad">Turning Ideas Into Digital Experiences.</h2>
+          <!-- Title line: screen readers read the full text; the typing effect is visual only (js/animations.js) -->
+          <p class="title-line"><span class="sr-only">BSCS Student | Aspiring Web Developer | Python Programmer</span><span aria-hidden="true">BSCS Student | <span id="typed" class="typed">Aspiring Web Developer | Python Programmer</span><span class="cursor"></span></span></p>
+          <p class="intro">I am a Computer Science student passionate about programming, creative web design, and exploring the technologies shaping the future.</p>
+          <div class="btn-row">
+            <a class="btn btn-primary" href="#projects"><i class="fa-solid fa-folder-open"></i> Explore My Projects</a>
+            <a class="btn btn-outline" href="assets/Nimra-Afzal-CV.pdf" download data-cv="download"><i class="fa-solid fa-download"></i> Download CV</a>
+            <a class="btn btn-ghost" href="#contact"><i class="fa-solid fa-envelope"></i> Contact Me</a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="symbol s1">&lt;/&gt;</div><div class="symbol s2">{ }</div>
+          <div class="symbol s3">SQL</div><div class="symbol s4">PHP</div><div class="symbol s5">PY</div>
+          <!-- ================================================================
+               AVATAR BLOCK: animated 3D-style cartoon (inline SVG, my own original design).
+               TO USE YOUR OWN IMAGE LATER: delete the whole <svg>...</svg> below and put
+               <img src="assets/images/avatar.png" alt="Nimra's cartoon avatar" width="400" height="420">
+               inside this div. Keep class="float" so the floating animation still works.
+               ================================================================ -->
+          <div class="avatar float">
+            <svg viewBox="0 0 400 420" role="img" aria-label="Cute 3D-style cartoon student with headphones typing on a glowing laptop">
+              <defs>
+                <radialGradient id="gSkin" cx=".38" cy=".3" r=".8"><stop offset="0" stop-color="#FFEFE5"/><stop offset=".6" stop-color="#FAD3C0"/><stop offset="1" stop-color="#EBAE96"/></radialGradient>
+                <radialGradient id="gHair" cx=".35" cy=".25" r=".9"><stop offset="0" stop-color="#FFFFFF"/><stop offset=".55" stop-color="#E4DED8"/><stop offset="1" stop-color="#B5ACA4"/></radialGradient>
+                <radialGradient id="gHood" cx=".35" cy=".2" r=".95"><stop offset="0" stop-color="#FFFBF7"/><stop offset=".6" stop-color="#EDE3D9"/><stop offset="1" stop-color="#C9BBAE"/></radialGradient>
+                <radialGradient id="gCoral" cx=".35" cy=".3" r=".9"><stop offset="0" stop-color="#FFC2B0"/><stop offset="1" stop-color="#D9715A"/></radialGradient>
+                <radialGradient id="gIris" cx=".4" cy=".3" r=".8"><stop offset="0" stop-color="#F2B493"/><stop offset="1" stop-color="#7B4A38"/></radialGradient>
+                <linearGradient id="gLid" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9C918A"/><stop offset="1" stop-color="#5E5550"/></linearGradient>
+                <linearGradient id="gBase" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#B9AEA6"/><stop offset="1" stop-color="#7C726B"/></linearGradient>
+                <radialGradient id="gGlow"><stop offset="0" stop-color="#FFB9A3" stop-opacity=".85"/><stop offset="1" stop-color="#FFB9A3" stop-opacity="0"/></radialGradient>
+              </defs>
+              <ellipse cx="200" cy="255" rx="175" ry="160" fill="url(#gGlow)" opacity=".5"/>
+              <ellipse cx="200" cy="408" rx="140" ry="12" fill="#5A463C" opacity=".2"/>
+              <!-- notebook -->
+              <g transform="rotate(-8 335 372)"><rect x="303" y="350" width="68" height="44" rx="6" fill="#F6EFE8" stroke="#D3C6BA"/><rect x="303" y="350" width="12" height="44" rx="5" fill="url(#gCoral)"/><rect x="324" y="362" width="38" height="4" rx="2" fill="#CFC3B8"/><rect x="324" y="372" width="28" height="4" rx="2" fill="#CFC3B8"/></g>
+              <!-- body (hoodie) -->
+              <path d="M104 410C96 305 138 254 200 252C262 254 304 305 296 410Z" fill="url(#gHood)"/>
+              <ellipse cx="200" cy="254" rx="58" ry="20" fill="#CDBFB2"/><ellipse cx="200" cy="250" rx="46" ry="14" fill="url(#gSkin)"/>
+              <path d="M184 266L181 304M216 266L219 304" stroke="#fff" stroke-width="4" stroke-linecap="round"/><circle cx="181" cy="306" r="4" fill="url(#gCoral)"/><circle cx="219" cy="306" r="4" fill="url(#gCoral)"/>
+              <!-- HEAD (sways, tilts on hover) -->
+              <g class="head">
+                <ellipse cx="200" cy="168" rx="100" ry="94" fill="#C9C1B9"/>
+                <circle cx="200" cy="165" r="86" fill="url(#gSkin)"/>
+                <ellipse cx="200" cy="232" rx="60" ry="14" fill="#FFB9A3" opacity=".35"/>
+                <ellipse cx="146" cy="202" rx="13" ry="8" fill="#F08A74" opacity=".45"/><ellipse cx="254" cy="202" rx="13" ry="8" fill="#F08A74" opacity=".45"/>
+                <g class="eye"><ellipse cx="166" cy="172" rx="16" ry="20" fill="#4E382F"/><ellipse cx="166" cy="175" rx="11" ry="14" fill="url(#gIris)"/><circle cx="160" cy="166" r="5.5" fill="#fff"/><circle cx="172" cy="182" r="2.5" fill="#fff"/></g>
+                <g class="eye"><ellipse cx="234" cy="172" rx="16" ry="20" fill="#4E382F"/><ellipse cx="234" cy="175" rx="11" ry="14" fill="url(#gIris)"/><circle cx="228" cy="166" r="5.5" fill="#fff"/><circle cx="240" cy="182" r="2.5" fill="#fff"/></g>
+                <path d="M150 144Q166 136 182 143M218 143Q234 136 250 144" stroke="#8D7C72" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+                <path d="M186 203Q200 226 214 203Z" fill="#B4513C"/><ellipse cx="200" cy="213" rx="6" ry="3.5" fill="#F4A08A"/>
+                <!-- hair -->
+                <path d="M110 152C106 78 294 78 290 152C272 122 252 120 234 142C222 118 190 112 168 140C150 126 128 134 110 152Z" fill="url(#gHair)"/>
+                <path d="M108 150C94 186 102 218 124 232C130 206 128 176 130 148Z" fill="url(#gHair)"/><path d="M292 150C306 186 298 218 276 232C270 206 272 176 270 148Z" fill="url(#gHair)"/>
+                <path d="M200 88C188 56 218 38 236 52" stroke="#E4DED8" stroke-width="9" fill="none" stroke-linecap="round"/>
+                <ellipse cx="168" cy="108" rx="34" ry="9" fill="#fff" opacity=".6" transform="rotate(-15 168 108)"/>
+                <!-- headphones -->
+                <path d="M116 156C112 66 288 66 284 156" stroke="url(#gCoral)" stroke-width="10" fill="none" stroke-linecap="round"/>
+                <ellipse cx="112" cy="176" rx="17" ry="26" fill="url(#gCoral)"/><ellipse cx="288" cy="176" rx="17" ry="26" fill="url(#gCoral)"/>
+                <ellipse cx="106" cy="166" rx="5" ry="9" fill="#fff" opacity=".5"/><ellipse cx="282" cy="166" rx="5" ry="9" fill="#fff" opacity=".5"/>
+              </g>
+              <!-- laptop -->
+              <ellipse class="glow" cx="200" cy="312" rx="70" ry="52" fill="url(#gGlow)"/>
+              <rect x="118" y="270" width="164" height="82" rx="10" fill="url(#gLid)"/>
+              <rect x="126" y="276" width="148" height="8" rx="4" fill="#fff" opacity=".18"/>
+              <circle cx="200" cy="313" r="11" fill="url(#gCoral)"/><circle cx="196" cy="309" r="3.5" fill="#fff" opacity=".7"/>
+              <path d="M108 350H292L312 388Q313 394 306 394H94Q87 394 88 388Z" fill="url(#gBase)"/>
+              <path d="M130 362H270M126 372H274" stroke="#5E5550" stroke-width="3" stroke-linecap="round" opacity=".45"/>
+              <!-- arms + typing hands -->
+              <path d="M116 292C92 326 108 356 146 364" stroke="url(#gHood)" stroke-width="40" stroke-linecap="round" fill="none"/>
+              <path d="M284 292C308 326 292 356 254 364" stroke="url(#gHood)" stroke-width="40" stroke-linecap="round" fill="none"/>
+              <g class="hand hl"><circle cx="156" cy="366" r="19" fill="url(#gHood)"/><circle cx="166" cy="364" r="13" fill="url(#gSkin)"/></g>
+              <g class="hand hr"><circle cx="244" cy="366" r="19" fill="url(#gHood)"/><circle cx="234" cy="364" r="13" fill="url(#gSkin)"/></g>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <a href="#about" class="scroll-ind" aria-label="Scroll down to About section"><span class="mouse"><span></span></span></a>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="section">
+      <div class="container">
+        <header class="sec-head reveal"><h2 class="grad">About Me</h2><p>A little about who I am and where I'm heading.</p></header>
+        <p class="about-text reveal">It started with a single line of Python. Today, as a BSCS student at the University of Sargodha, I enjoy the moment when a stubborn bug finally gives way to a working program. I have worked through Python, OOP, data structures, MySQL and PHP, and I am shaping my frontend skills with HTML, CSS and JavaScript. Beyond websites, I am curious about AI and machine learning, and I am building my way toward creating clean, useful software.</p>
+        <div class="grid grid-4">
+          <div class="card reveal"><i class="icon fa-solid fa-graduation-cap"></i><h3>Computer Science Student</h3><p>Learning the core ideas of computing, one semester at a time.</p></div>
+          <div class="card reveal" style="--d:.1s"><i class="icon fa-brands fa-python"></i><h3>Python Programmer</h3><p>Where my programming journey began.</p></div>
+          <div class="card reveal" style="--d:.2s"><i class="icon fa-solid fa-laptop-code"></i><h3>Aspiring Web Developer</h3><p>Growing my HTML, CSS and JavaScript skills.</p></div>
+          <div class="card reveal" style="--d:.3s"><i class="icon fa-solid fa-brain"></i><h3>AI Explorer</h3><p>Curious about AI and machine learning.</p></div>
+        </div>
+        <ul class="facts reveal">
+          <li><i class="fa-solid fa-location-dot"></i><span>Location</span><strong>Sargodha, Pakistan</strong></li>
+          <li><i class="fa-solid fa-building-columns"></i><span>University</span><strong>University of Sargodha</strong></li>
+          <li><i class="fa-solid fa-book-open"></i><span>Semester</span><strong>3rd Semester</strong></li>
+          <li><i class="fa-solid fa-star"></i><span>CGPA</span><strong>3.62</strong></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION ============ -->
+    <section id="education" class="section alt">
+      <div class="container narrow">
+        <header class="sec-head reveal"><h2 class="grad">Education</h2><p>My academic path so far.</p></header>
+        <ol class="timeline">
+          <li class="t-item reveal"><span class="dot"><i class="fa-solid fa-graduation-cap"></i></span>
+            <div class="card"><h3>BSCS, University of Sargodha</h3><p>Bachelor of Science in Computer Science</p><p class="meta"><span class="pill live">3rd Semester, in progress</span><span class="pill">CGPA 3.62</span></p></div></li>
+          <li class="t-item reveal"><span class="dot"><i class="fa-solid fa-flask"></i></span>
+            <div class="card"><h3>Intermediate (FSc)</h3><p class="meta"><span class="pill done">Completed</span><span class="pill">89.3% (1072/1200)</span></p></div></li>
+          <li class="t-item reveal"><span class="dot"><i class="fa-solid fa-book"></i></span>
+            <div class="card"><h3>Matriculation</h3><p class="meta"><span class="pill done">Completed</span><span class="pill">87.3% (960/1100)</span></p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS (filled by main.js from js/projects.js) ============ -->
+    <section id="skills" class="section">
+      <div class="container">
+        <header class="sec-head reveal"><h2 class="grad">Skills</h2><p>Honest levels: I am still learning and growing every day.</p></header>
+        <div id="skills-root"></div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section id="projects" class="section alt">
+      <div class="container">
+        <header class="sec-head reveal"><h2 class="grad">Projects</h2><p>My real projects will appear here. Sample concepts are clearly labelled.</p></header>
+        <div class="filters" role="group" aria-label="Filter projects">
+          <button class="chip active" data-filter="all" aria-pressed="true">All</button>
+          <button class="chip" data-filter="real" aria-pressed="false">My Projects</button>
+          <button class="chip" data-filter="sample" aria-pressed="false">Sample Concepts</button>
+        </div>
+        <div id="project-grid" class="grid grid-3"></div>
+      </div>
+    </section>
+
+    <!-- ============ JOURNEY (data in js/projects.js) ============ -->
+    <section id="journey" class="section">
+      <div class="container narrow">
+        <header class="sec-head reveal"><h2 class="grad">My Learning Journey</h2><p>The steps I have taken so far.</p></header>
+        <ol class="timeline" id="journey-root"></ol>
+      </div>
+    </section>
+
+    <!-- ============ GOALS ============ -->
+    <section id="goals" class="section alt">
+      <div class="container">
+        <header class="sec-head reveal"><h2 class="grad">What I'm Working Towards</h2><p>The goals that keep me learning.</p></header>
+        <div class="grid grid-3" id="goals-root"></div>
+      </div>
+    </section>
+
+    <!-- ============ RESUME ============ -->
+    <section id="resume" class="section">
+      <div class="container narrow">
+        <div class="card resume reveal">
+          <i class="fa-solid fa-file-pdf pdf-icon" aria-hidden="true"></i>
+          <div><h3>My Resume</h3><p>A short summary of my education, skills and interests in PDF format.</p>
+            <div class="btn-row">
+              <a class="btn btn-primary" href="assets/Nimra-Afzal-CV.pdf" download data-cv="download"><i class="fa-solid fa-download"></i> Download CV</a>
+              <a class="btn btn-outline" href="assets/Nimra-Afzal-CV.pdf" target="_blank" rel="noopener noreferrer" data-cv="view"><i class="fa-solid fa-eye"></i> View CV</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="section alt">
+      <div class="container">
+        <header class="sec-head reveal"><h2 class="grad">Contact</h2><p>Have a question or want to say hello? Send me a message.</p></header>
+        <div class="contact-grid">
+          <div class="card reveal contact-info">
+            <h3>Get in touch</h3>
+            <ul>
+              <li><i class="fa-solid fa-envelope"></i><a href="mailto:nimraafzal257@gmail.com">nimraafzal257@gmail.com</a></li>
+              <li><i class="fa-solid fa-location-dot"></i><span>Sargodha, Pakistan</span></li>
+              <li><i class="fa-brands fa-github"></i><a href="https://github.com/serious-jpg" target="_blank" rel="noopener noreferrer">github.com/serious-jpg</a></li>
+            </ul>
+          </div>
+          <form class="card reveal" id="contact-form" novalidate>
+            <div class="field"><label for="name">Name</label><input id="name" name="name" type="text" autocomplete="name" required><small class="err" id="err-name"></small></div>
+            <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required><small class="err" id="err-email"></small></div>
+            <div class="field"><label for="subject">Subject</label><input id="subject" name="subject" type="text" required><small class="err" id="err-subject"></small></div>
+            <div class="field"><label for="message">Message</label><textarea id="message" name="message" rows="5" required></textarea><small class="err" id="err-message"></small></div>
+            <button class="btn btn-primary" type="submit" id="send-btn"><i class="fa-solid fa-paper-plane"></i> <span>Send Message</span></button>
+            <div id="form-status" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container foot-grid">
+      <div><a href="#home" class="logo">Nimra<span>.</span></a><p>BSCS student building skills in Python and web development.</p></div>
+      <nav aria-label="Footer navigation"><ul class="foot-links">
+        <li><a href="#about">About</a></li><li><a href="#education">Education</a></li><li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li><li><a href="#journey">Journey</a></li><li><a href="#contact">Contact</a></li></ul></nav>
+      <div class="foot-social">
+        <a href="https://github.com/serious-jpg" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile"><i class="fa-brands fa-github"></i></a>
+        <a href="mailto:nimraafzal257@gmail.com" aria-label="Send email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+    <p class="copy">© <span id="year">2026</span> Nimra Afzal. All rights reserved.</p>
+  </footer>
+
+  <button id="to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+  <div id="toast" role="status" aria-live="polite"></div>
+
+  <!-- Project details modal -->
+  <div class="modal" id="modal" hidden>
+    <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modal-title" tabindex="-1">
+      <button class="modal-close" id="modal-close" aria-label="Close details"><i class="fa-solid fa-xmark"></i></button>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <!-- EmailJS library (only used by the contact form) -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <!-- Order matters: config, data, main, then animations -->
+  <script src="js/config.js"></script>
+  <script src="js/projects.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+</body>
+</html>
